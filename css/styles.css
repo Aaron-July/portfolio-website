@@ -16,6 +16,13 @@
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
 }
+.dark-theme{
+	--bg-color: #000106;
+	--second-color: #000;
+	--text-color: #fff;
+	--main-color: #f75023;
+}
+
 body{
 	background: var(--bg-color);
 	color: var(--text-color);
