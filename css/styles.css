@@ -23,7 +23,7 @@
 	--main-color: #f75023;
 }
 .dark-theme #home{
-	background-image: none;
+	background-image: url(../images/black.webp);
 }
 body{
 	background: var(--bg-color);
