@@ -22,7 +22,9 @@
 	--text-color: #fff;
 	--main-color: #f75023;
 }
-
+.dark-theme #home{
+	background-image: none;
+}
 body{
 	background: var(--bg-color);
 	color: var(--text-color);
