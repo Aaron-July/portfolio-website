@@ -10,12 +10,13 @@
 :root{
 	--bg-color: #ffffff;
 	--text-color: #000;
-	--secound-color: #a09dab;
+	--second-color: #a09dab;
 	--main-color: #f75023;
 	--big-font: 5rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
 }
+
 .dark-theme{
 	--bg-color: #000106;
 	--second-color: #000;
@@ -23,7 +24,7 @@
 	--main-color: #f75023;
 }
 .dark-theme #home{
-	background-image: url(../images/black.webp);
+		background-image: url(../images/black.webp);
 }
 body{
 	background: var(--bg-color);
@@ -52,6 +53,7 @@ header.sticky{
 	width: 30px;
 	cursor: pointer;
 }
+
 
 .logo img{
 	max-width: 100%;
@@ -85,7 +87,7 @@ header.sticky{
 	width: 100%;
 }
 #menu-icon{
-	font-size: 35px;
+	font-size: 25px;
 	color: var(--text-color);
 	z-index: 10001;
 	cursor: pointer;
@@ -116,9 +118,9 @@ section{
 }
 .home{
 	min-height: 100vh;
-	height: 100%;
+	height: 80%;
 	width: 100%;
-	background: url(../images/background.jpg);
+	background-image: url(../images/background.jpg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -148,7 +150,7 @@ span{
 }
 .home-text p{
 	font-size: var(--p-font);
-	color: var(--secound-color);
+	color: var(--second-color);
 	line-height: 28px;
 	margin-bottom: 20px;
 }
@@ -215,7 +217,7 @@ span{
 }
 .sub-box p{
 	font-size: var(--p-font);
-	color: var(--secound-color);
+	color: var(--second-color);
 	line-height: 29px;
 }
 .sub-box:hover{
@@ -251,7 +253,7 @@ span{
 .about-text p{
 	max-width: 550px;
 	font-size: var(--p-font);
-	color: var(--secound-color);
+	color: var(--second-color);
 	line-height: 28px;
 	margin-bottom: 45px;
 }
@@ -272,7 +274,7 @@ span{
 }
 .heading p{
 	font-size: var(--p-font);
-	color: var(--secound-color);
+	color: var(--second-color);
 	line-height: 28px;
 }
 .portfolio-content{
@@ -385,7 +387,7 @@ span{
 }
 .row p{
 	font-size: var(--p-font);
-	color: var(--secound-color);
+	color: var(--second-color);
 	line-height: 28px;
 }
 .row:hover{
@@ -427,19 +429,110 @@ span{
 	font-size: var(--p-font);
 }
 
+
+
 .contact{
-	background: #8067f0eb;
-	width: 64%;
-	margin: 100px auto;
+		background: #8067f0eb;
+		height: 100%;
+		width: 100%;
+		min-height: 100vh;
+		margin: 100px auto;
 	padding: 70px 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
-	border-radius: 12px;
-	background-image: url(../img/intro.png);
-	background-size: cover;
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+		align-items: center;
+		grid-gap: 6rem;
+		background-image: url(../images/intro.png);
+		background-size: auto;
+	}
+.contact-img img{
+	max-width: 100%;
+	width: 720px;
+	height: auto;
+	border-radius: 10px;
 }
+.contact-form h1{
+	font-size: 80px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.contact-form form{
+	position: relative;
+}
+.contact-form form input,
+form textarea{
+	width: 100%;
+	padding: 17px;
+	border: none;
+	outline: none;
+	background: #191919;
+	color: #fff;
+	font-size: 1.1rem;
+	margin-bottom: 0.7rem;
+	border-radius: 10px;
+}
+.contact-form textarea{
+	resize: none;
+	height: 200px;
+}
+.contact-form form .btn{
+	display: inline-block;
+	background: var(--main-color);
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	width: 220px;
+	transition: ease .20s;
+	cursor: pointer;
+}
+.contact-form form .btn:hover{
+	border: 2px solid var(--main-color);
+	background: transparent;
+	transform: scale(1, 1);
+}
+@media (max-width: 1570px) {
+	section{
+		padding: 80px 3%;
+		transition: .2s;
+	}
+	.contact-form h1{
+		font-size: 60px;
+	}
+	.contact-form p{
+		margin-bottom: 3rem;
+	}
+}
+@media (max-width: 1090px){
+	.contact{
+		grid-gap: 2rem;
+		transition: .2s;
+	}
+}
+@media (max-width: 1000px){
+	.contact{
+		grid-template-columns: 1fr;
+	}
+	.contact-form{
+		order: 2;
+	}
+	.contact-form img{
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+
+
+
 .center h3{
 	font-size: 30px;
 	font-weight: 500;
@@ -496,10 +589,10 @@ span{
 		padding: 70px 3%;
 		transition: .3s;
 	}
-	.contact{
+	/* .contact{
 		width: 95%;
 		transition: .3s;
-	}
+	} */
 	:root{
 		--big-font: 4rem;
 		--h2-font: 2.3rem;
@@ -576,7 +669,7 @@ span{
 		transition: .3s;
 	}
 }
-@media (max-width: 540px){
+/* @media (max-width: 540px){
 	.contact .action form input[type="email"] {
 		width: 310px;
 	}
