@@ -19,7 +19,7 @@
 
 .dark-theme{
 	--bg-color: #000106;
-	--second-color: #000;
+	--second-color: #ffffff;
 	--text-color: #fff;
 	--main-color: #f75023;
 }
@@ -351,7 +351,7 @@ span{
 	margin-top: 5rem;
 }
 .row{
-	background: #ffffff;
+	background: var(--bg-color);
 	box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
 	border-radius: 12px;
 	padding: 45px 45px 45px 45px;
