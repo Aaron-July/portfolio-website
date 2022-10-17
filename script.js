@@ -8,12 +8,12 @@ let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
 menu.onclick = () => {
-	menu.classList.toggle('bx-x');
+	menu.classList.toggle('fa-a');
 	navlist.classList.toggle('active');
 };
 
 window.onscroll = () => {
-	menu.classList.remove('bx-x');
+	menu.classList.remove('fa-a');
 	navlist.classList.remove('active');
 };
 
@@ -28,12 +28,12 @@ sr.reveal('.home-img',{delay:350, origin:'right'})
 
 sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:200, origin:'bottom'})
 
-
 var icon = document.getElementById("icon");
+
 
 icon.onclick = function(){
 	document.body.classList.toggle("dark-theme");
-		if(document.body.classList.contains("dark-theme")){
+	if(document.body.classList.contains("dark-theme")){
 		icon.src = "images/sun.png";
 	}else{
 		icon.src = "images/moon.png";
